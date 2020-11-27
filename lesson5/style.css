@@ -1,73 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
 body {
     font-family: sans-serif;
 }
 
-.top {
-    background-color: rgb(246, 246, 248);
+.main_menu_list {      
+    padding-top: 10px; 
+    padding-bottom: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
 }
 
 .contacts_top_block {
-    background-color: #1f3f68;    
-}
-
-.main_top_block {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
-    height: 400px;
-}
-
-.main_menu {
-    margin-left: 200px;
-}
-
-.main_menu_list {       
-    list-style-type: none;
+    background-color: #1f3f68;
+    color: white;    
 }
 
 .contacts_top_title {
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 0;
-    padding-right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding-top: 20px;
     padding-bottom: 30px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;    
+}
+
+.main_top_block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .main_top_title {
-    margin-right: 100px;
-    padding-top: 20px;
-    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 100px;
+    padding-right: 20px;
     color: #1f3f68;
     height: 50px;
-    text-align: center;
-    float: left;
-    box-sizing: border-box;    
-}
-
-.main_top_img {
-    overflow: hidden;
-    margin-bottom: 30px;
 }
 
 .contacts_main_block {
-    display: table;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     margin-top: 30px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-bottom: 30px;
+    flex-direction: row;
 }
 
 .contacts {
     width: 400px;
     margin-right: 100px;
     margin-bottom: 50px;
-    float: left;
+
 }
 
 .contacts_objects {
@@ -95,49 +91,64 @@ body {
     box-sizing: border-box;
 }
 
-.map {
-    display: table;
-    align-content: center;
-    clear: both;
-    overflow: hidden;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 20px;
-  }
-
-.main_page_main_block {
-    clear: both;
+.map_holder {
+    display: flex;
+    position: relative;
+    width: 100%;
 }
 
+.map {
+    display: flex;
+    margin-bottom: 20px;
+    width: 100%;
+    height: 400px;
+}
+
+
 .main_block_header {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     color: #1f3f68;
 }
 
-.main_block_our_benefits {
-    display: table;
-    align-content: center;
-    margin-left: auto;
-    margin-right: auto;
+.works {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.benefit {
-    float: left;
-    margin-left: 100px;
-    margin-right: 100px;
-    overflow: hidden;
+.work {
+    flex-grow: 1;
+    flex-basis: 359px;
+    max-width: 359px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.work > img {
+    width: 250px;
+    height: 250px;
 }
 
 .footer {
     color: white;
+}
+
+.footer_bg {
     background-color: #1f3f68;
-    border-width: 2px;
 }
 
 .footer_title { 
-    padding-top: 20px;
+    background-color: #1f3f68;
+    padding-top: 40px;
     padding-left: 40px;
-    padding-bottom: 20px;
+    margin-bottom: 40px;
+    max-width: 495px;
+    flex-basis: 495px;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer_main_block {
@@ -146,15 +157,35 @@ body {
     padding-bottom: 20px;
 }
 
+.footer_main_block > ul {
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-around;
+    list-style-type: none;
+}
+
+.footer>h3 {
+    max-width: 340px;
+}
+
 .prg {
     font-size: 16px;
     line-height: 26px;
     color: #1f3f68;
 }
 
-.header1 {
+.main_header1 {
+    display: flex;
     font-size: 64px;
     color: #1f3f68;
+    max-width: 510px;
+    flex-basis: 510px;
+}
+
+.main_top_p {
+    display: flex;
+    max-width: 425px;
+    flex-basis: 425px;
 }
 
 .header2 {
